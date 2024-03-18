@@ -12,7 +12,7 @@ fn main() {
     });
 
     if let Err(e) = rust_doc_grep::run(config) {
-        println!("Application error: {e}");
+        println!("{e}");
         process::exit(1);
     }
 }
